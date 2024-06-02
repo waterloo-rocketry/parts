@@ -47,6 +47,8 @@ Promise.race([
         {name: 'ratingW' },
         {name: 'projects' },
         {name: 'digikey' },
+        {name: 'date' },
+        {name: 'image' },
     ], ignoreLocation: true});
 
     // Show the table with all the parts
