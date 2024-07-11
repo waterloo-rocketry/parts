@@ -1,48 +1,98 @@
-* { 
+*{ 
     font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
-html, body {
+body, html {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
+/* ====================  BANNER STYLING ================== */
+
+.banner {
+    top: 0px;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    display: block;
+    height: 3rem;
+    min-height: 70px;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    background: #2b2b2b;
+    background-color: rgba(0, 0, 0, 1);
 }
 
-#includeHeader {
-    flex-shrink: 0;
+
+.banner__logo {
+    display: inline-block;
+    height: 5rem;
 }
 
-.content {
-    flex: 1;
-    padding: 2rem;
+.banner__buttons {
+    display: inline;
 }
 
-#includeFooter {
-    flex-shrink: 0;
+
+.banner .nav--right {
+    margin-right: 4rem;
 }
+.banner .nav--right ul {
+    text-align: center;
+    margin-right: 3rem;
+}
+
+.banner .nav--right li {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding-right: 0.3rem;
+    padding-top: 2rem;
+    display: inline-block;
+}
+
+
+
+.banner a {
+    text-decoration: none;
+    margin: 0.6rem;
+    color: #999999;
+    transition: color 0.2s linear;
+}
+
+
+.banner a:hover {
+    color: #bbbbbb;
+    text-decoration: none;
+}
+
+/* ====================  BANNER STYLING ================== */
+
+/* ====================  MAIN CONTENT DIV STYLING ================== */
+
+.content{
+    margin-top: 12rem;
+}
+
+/* ====================  MAIN CONTENT DIV STYLING ================== */
+
 
 /* ====================  FOOTER STYLING ================== */
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 2.3rem 2rem;
     width: 100%;
     background: #2b2b2b;
     background-color: rgba(0, 0, 0, 0.85);
+    bottom: 0;
 }
 
 .footer__container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    
 }
 
 .footer__container img {
@@ -62,6 +112,7 @@ body {
     color: #bbbbbb;
     margin-left: 0.5rem;
 }
+/* ====================  FOOTER STYLING ================== */
 
 /* ====================  HEADER STYLING ================== */
 .heading {
@@ -108,46 +159,26 @@ hr {
     margin-right: 2rem;
 }
 
-
 /* ====================  HEADER STYLING ================== */
 
 
-/* ====================  CONTENT STYLING ================== */
-
-#offline-warning {
-    position: relative;
-    display: none;
-    background-color: #fce8e6;
-    color: rgb(165, 14, 14);
-    margin: 0 auto;
-    padding: 1em;
-}
-
-#offline-warning p {
-    margin: 0;
-    text-align: center;
-}
-
-.description {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-/* ====================  CONTENT STYLING ================== */
 
 /* ====================  RESPONSIVE RESIZING  ================== */
-
-@media (max-width: 768px) {
-    .description {
-        flex-direction: column;
+@media (max-width: 1150px) {
+    .footer__container {
+        margin-left: 60%;
+        margin-right: 0%;
     }
 }
+
 
 @media (max-width: 1000px) {
     .nav--right {
         display: none;
     }
-
+    .footer {
+        margin-top: 20%;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -162,3 +193,14 @@ hr {
     }
 }
 
+@media (max-width: 1700px) {
+    .footer {
+        margin-top: auto;
+    }
+}
+
+@media (min-width: 1700px) {
+    .footer {
+        margin-top: auto;
+    }
+}
