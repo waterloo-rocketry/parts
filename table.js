@@ -24,6 +24,7 @@ function buildTable(data, section) {
             sections[j][i].style.display="none";
         }
     }
+
     if (width > 1000 && section != 1 && section != 2) {
         section = 1;
     }
@@ -45,6 +46,7 @@ function buildTable(data, section) {
             })
         );
         document.getElementById("select1").src = "image/selected.png"
+        document.getElementById("select2").style.display = "image/selected.png";
         document.getElementById("select3").style.display = "none";
         document.getElementById("select4").style.display = "none";
         document.getElementById("select5").style.display = "none";
@@ -71,6 +73,7 @@ function buildTable(data, section) {
                 return tr;
             })
         );
+        
         document.getElementById("select2").src = "image/selected.png"
         document.getElementById("select3").style.display = "none";
         document.getElementById("select4").style.display = "none";

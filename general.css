@@ -2,8 +2,10 @@
     font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
-body {
+body, html {
     margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 /* ====================  BANNER STYLING ================== */
@@ -14,18 +16,18 @@ body {
     position: fixed;
     z-index: 1;
     display: block;
-    height: auto;
-    min-height: 80px;
+    height: 3rem;
+    min-height: 70px;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
     background: #2b2b2b;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 1);
 }
 
 
 .banner__logo {
     display: inline-block;
-    height: 6rem;
+    height: 5rem;
 }
 
 .banner__buttons {
@@ -76,76 +78,40 @@ body {
 /* ====================  MAIN CONTENT DIV STYLING ================== */
 
 
-
-.description__about {
-    display: block;
-    float: left;
-    margin-left: 5%;
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 135%;
-}
-
-.description__submit {
-    display: block;
-    float: left;
-    margin-left: 5%;
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 135%;
-}
-
-.image__about img{
-    margin-top: 2%;
-    margin-bottom: 8%;
-}
-
-form {
-    margin-bottom: 5rem;
-}
-
 /* ====================  FOOTER STYLING ================== */
 
 .footer {
-    float: left;
-    display: block;
-    margin-top: 100%;
-    left: 0;
-    bottom: 0;
+    padding: 2.3rem 2rem;
     width: 100%;
-	height: 10rem;
-	text-align: center;
-	padding-top: 2.3rem;
-	background: #2b2b2b;
-	background-color: rgba(0, 0, 0, 0.85);
+    background: #2b2b2b;
+    background-color: rgba(0, 0, 0, 0.85);
+    bottom: 0;
 }
 
 .footer__container {
-	display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .footer__container img {
-	height: 3.4rem;
+    height: 3.4rem;
 }
 
 .footer__return {
-	display: inline-block;
-    position: absolute;
-    left: 0;
-    margin-left: 2rem;
+    display: flex;
+    align-items: center;
 }
 
-.footer__return a img {
-	height: 3.4rem;
-    text-align: left;
+.footer__return img {
+    height: 3.4rem;
 }
 
 .footer__return p {
-	color: #bbbbbb;
+    color: #bbbbbb;
+    margin-left: 0.5rem;
 }
-
 /* ====================  FOOTER STYLING ================== */
 
 /* ====================  HEADER STYLING ================== */
@@ -169,7 +135,7 @@ hr {
     width: fit-content;
 }
 
-.nav--button:hover{
+.nav--button:hover {
     margin-right: 3rem;
     margin-top: 1rem;
     border-width: 0.30rem;
@@ -179,10 +145,10 @@ hr {
 
 #nav--dropdown {
     background-color: #2b2b2b;
-	background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
-#nav--dropdown li{
+#nav--dropdown li {
     margin-bottom: -2%;
     list-style: none;
     color: #bbbbbb;
@@ -213,7 +179,6 @@ hr {
 
 /* ====================  OFFLINE WARNING STYLING ================== */
 
-
 /* ====================  TABLE STYLING ================== */
 #container {
     width: 90%;
@@ -243,11 +208,11 @@ hr {
 #parts-table tr {
     height: 2em;
     text-align: center;
-    white-space:pre-wrap;
-    word-break:break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
 }
 
-#parts-table tr th{
+#parts-table tr th {
     text-align: center;
     white-space: pre-wrap;
     word-break: break-word;
@@ -267,7 +232,7 @@ hr {
 }
 
 /* parts table column widths */
-#parts-table tr th {width: 10%}
+#parts-table tr th { width: 10% }
 
 #parts-table #sortable::after {
     content: '';
@@ -324,36 +289,22 @@ hr {
 
 /* ====================  RESPONSIVE RESIZING  ================== */
 @media (max-width: 1150px) {
-    .image__about img {
-        float: none;
-        width: 60%;
-        display: block;
-        margin: auto;
-    }
-    .description__about {
-        width: 90%;
-        float: none;
-    }
     .footer__container {
         margin-left: 60%;
         margin-right: 0%;
     }
+    .image__about img {
+        width: 50rem;
+    }
 }
 
 @media (min-width: 1150px) {
-    .image__about img{
-        display: block;
-        float: right;
+    .image__about img {
         margin-right: 5%;
         width: 50rem;
     }
     .description__about {
         width: 45%;
-        float: left;
-    }
-    .footer__container {
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 
@@ -373,19 +324,20 @@ hr {
     #nav--dropdown {
         display: none;
     }
-    #nav--dropdown ul{
+    #nav--dropdown ul {
         display: none;
     }
 }
 
 @media (max-width: 1700px) {
     .footer {
-        margin-top: 20%;
+        margin-top: auto;
     }
 }
 
 @media (min-width: 1700px) {
     .footer {
-        position: fixed;
+        margin-top: auto;
     }
 }
+/* ====================  RESPONSIVE RESIZING  ================== */
