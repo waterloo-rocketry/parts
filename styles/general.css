@@ -1,0 +1,207 @@
+*{ 
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* ====================  BANNER STYLING ================== */
+
+.banner {
+    top: 0px;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    display: block;
+    height: 3rem;
+    min-height: 70px;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    background: #2b2b2b;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+
+.banner__logo {
+    display: inline-block;
+    height: 5rem;
+}
+
+.banner__buttons {
+    display: inline;
+}
+
+
+.banner .nav--right {
+    margin-right: 4rem;
+}
+.banner .nav--right ul {
+    text-align: center;
+    margin-right: 3rem;
+}
+
+.banner .nav--right li {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding-right: 0.3rem;
+    padding-top: 2rem;
+    display: inline-block;
+}
+
+
+
+.banner a {
+    text-decoration: none;
+    margin: 0.6rem;
+    color: #999999;
+    transition: color 0.2s linear;
+}
+
+
+.banner a:hover {
+    color: #bbbbbb;
+    text-decoration: none;
+}
+
+/* ====================  BANNER STYLING ================== */
+
+/* ====================  MAIN CONTENT DIV STYLING ================== */
+
+.content{
+    margin-top: 12rem;
+}
+
+/* ====================  MAIN CONTENT DIV STYLING ================== */
+
+
+/* ====================  FOOTER STYLING ================== */
+
+.footer {
+    padding: 2.3rem 2rem;
+    width: 100%;
+    background: #2b2b2b;
+    background-color: rgba(0, 0, 0, 0.85);
+    bottom: 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer__container img {
+    height: 3.4rem;
+}
+
+.footer__return {
+    display: flex;
+    align-items: center;
+}
+
+.footer__return img {
+    height: 3.4rem;
+}
+
+.footer__return p {
+    color: #bbbbbb;
+    margin-left: 0.5rem;
+}
+/* ====================  FOOTER STYLING ================== */
+
+/* ====================  HEADER STYLING ================== */
+.heading {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+hr {
+    color: #2b2b2b;
+}
+
+.nav--button {
+    margin-right: 3rem;
+    margin-top: 1rem;
+    transition: 0.2s;
+    border-style: solid;
+    border-color: #2b2b2b;
+    border-radius: 5px;
+    border-width: 0.30rem;
+    width: fit-content;
+}
+
+.nav--button:hover {
+    margin-right: 3rem;
+    margin-top: 1rem;
+    border-width: 0.30rem;
+    border-radius: 5px;
+    border-color: #bbbbbb;
+}
+
+#nav--dropdown {
+    background-color: #2b2b2b;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+#nav--dropdown li {
+    margin-bottom: -2%;
+    list-style: none;
+    color: #bbbbbb;
+    padding: 1rem;
+}
+
+.nav--right {
+    margin-right: 2rem;
+}
+
+/* ====================  HEADER STYLING ================== */
+
+
+
+/* ====================  RESPONSIVE RESIZING  ================== */
+@media (max-width: 1150px) {
+    .footer__container {
+        margin-left: 60%;
+        margin-right: 0%;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .nav--right {
+        display: none;
+    }
+    .footer {
+        margin-top: 20%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .nav--button {
+        display: none;
+    }
+    #nav--dropdown {
+        display: none;
+    }
+    #nav--dropdown ul {
+        display: none;
+    }
+}
+
+@media (max-width: 1700px) {
+    .footer {
+        margin-top: auto;
+    }
+}
+
+@media (min-width: 1700px) {
+    .footer {
+        margin-top: auto;
+    }
+}
+/* ====================  RESPONSIVE RESIZING  ================== */
